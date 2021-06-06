@@ -25,7 +25,7 @@ After the connection, the user can flight an airplane by himself, using the joys
    Model.kt - responsible for all logic. Connect and disconnect to flightGear and send requests.<br/>
 		
 **view**<br/>
-   Joystick.kt - responsible for joystick's view.
+   Joystick.kt - responsible for joystick's view.<br/>
    MainActivity.kt - this class get all data from the view and send it to viewModel, and ViewModel.kt send it to Model.kt.
     
 
@@ -37,7 +37,12 @@ After the connection, the user can flight an airplane by himself, using the joys
 - Press the button Fly in FlightGear. You can press on 'v' in your keyboard to get another angle of the airplane.
 - Download android studio version 4.2.1 (latest version). [Download here](https://developer.android.com/studio)
 - Create an Android virtual device (emulator). [Click here for set up guild](https://developer.android.com/codelabs/kotlin-android-training-get-started?index=..%2F..android-kotlin-fundamentals#5)
-- Clone the project.
+- Download the repo as zip.
+- Extract the folder.
+- Enter ‘Android Studio’.
+- File -> open.
+- Go to the extracted folder.
+- Double click on the ‘Android-App-Remote-Control-Joystick’ with the android icon next to it, and then press ‘ok’.
 - Now, enter your computer IP and PORT 6400 and click "connect". If the connection failed, check your flightGear. If the connection success, you can control the airplane by the joystick and by the seekBars.
 Enjoy :)
 
@@ -48,6 +53,12 @@ Enjoy :)
 #### Authors:
 * Liav Trabelsy
 * Hadas Babayov
+
+
+
+
+
+
 
 
 
