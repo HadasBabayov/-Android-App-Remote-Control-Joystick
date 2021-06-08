@@ -19,11 +19,13 @@ class Model {
 
     @SuppressLint("SetTextI18n")
     fun connectFlightGear(ip: String, port: Int) {
-        val policy = ThreadPolicy.Builder().permitAll().build()
-        StrictMode.setThreadPolicy(policy)
-        this.socket = Socket(ip,port)
-        this.outStream= this.socket.getOutputStream()
-        this.isConnected = true
+        val t = Thread(Runnable {
+            this.socket = Socket(ip,port)
+            this.outStream= this.socket.getOutputStream()
+            this.isConnected = true
+        })
+        t.start()
+        t.join()
     }
 
     fun setSeekBars(rudder : SeekBar, throttle : SeekBar) {
