@@ -1,7 +1,7 @@
 # Android App Remote Control Joystick:
 
 Our application is a simple joystick control application.
-The application connect to the flighGear using the device ip, and the flightGear port.
+The application connect to the flightGear using the device ip, and the flightGear port.
 After the connection, the user can flight an airplane by himself, using the joystick and the seekBars on the screen.
 
 ### App features:
